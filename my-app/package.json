@@ -1,0 +1,69 @@
+{
+  "name": "my-app",
+  "homepage": "/users/iamshaunjp/repos",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.4.2",
+    "@iconify/react": "^3.1.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "add": "^2.0.6",
+    "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "classnames": "^2.3.1",
+    "echarts": "^5.2.2",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
+    "gsap": "^3.9.0",
+    "prettier": "^2.5.0",
+    "react": "^17.0.2",
+    "react-animated-cursor": "^2.2.0",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "5.3.0",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.11.0",
+    "sass": "^1.43.5",
+    "vanilla-tilt": "^1.7.2",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.17"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "npm run build-css && craco  start",
+    "build": "npm run build-css && craco  build",
+    "test": "npm run build-css && craco  test",
+    "eject": "react-scripts eject",
+    "build-css": "tailwindcss build -i src/styles/root.css -o src/styles/main.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}
